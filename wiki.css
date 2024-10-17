@@ -1,0 +1,69 @@
+.collapsible {
+    cursor: pointer;
+    background-color: #7a3b3b; 
+    border: none;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+.collapsible:hover {
+    background-color: #5d1313; 
+}
+
+.collapsible::after {
+    content: '\25BC'; 
+    float: right;
+    font-size: 12px;
+}
+
+.collapsible.active::after {
+    content: '\25B2';
+}
+
+.collapsible + p, .collapsible + section {
+    display: none; 
+    padding: 0 18px;
+    background-color: #885656;
+}
+
+.collapsible.active + p, .collapsible.active + section {
+    display: block; 
+}
+
+figure {
+    margin: 20px 0;
+    padding: 10px;
+    border: 5px solid #5a0808;
+    background-color: #7a3b3b;
+}
+
+figcaption {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+ol {
+    padding-left: 20px;
+}
+
+ol ol {
+    padding-left: 20px; 
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: #d8dde3;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #1f242a; /* Darker on hover */
+}
